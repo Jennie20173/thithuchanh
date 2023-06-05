@@ -19,8 +19,8 @@ class Staff{
   constructor(fullname,email){
     this.fullname = fullname;
     this.email =email;
-    this.setFullName = function(fullname){
-      return this.fullname;
+    this.setFullName = function(name){
+      return this.fullnam = name;
     }
   }
 }

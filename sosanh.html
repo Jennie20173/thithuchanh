@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let a = [1, 2, 3];
+    let b = [1, 2, 3];
+    function compareTriplets(a, b) {
+        
+        let dem1 = 0;
+        let dem2 = 0;
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < b.length; j++) {
+                if (a[i] > b[j]) {
+                    dem1++;
+                }
+                else if (a[i] < b[j]) {
+                    dem2++;
+                }
+            }
+          
+        }
+     
+    }
+     let c=[];
+     compareTriplets(a, b);
+    c.push(dem1);
+    c.push(dem2);
+    console.log(c);
+</script>
+
+</html>
