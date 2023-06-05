@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var array = [1, 1, 3, 5, 2, 4, 7, 8, 9];
+    var number = parseInt(prompt('nhập vào số nguyên N:'));
+    function viTriNumber(array, number) {
+        let vt;
+        for (let j = 0; j <= array.length; j++) {
+            if (number == array[j]) {
+                vt = j;
+            }
+
+        } return vt;
+    }
+    let vt = viTriNumber(array, number);
+    console.log(vt);
+
+
+    function checkNumber(array, number) {
+        let dem = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (number == array[i]) {
+                dem = dem + 1;
+            }
+        } return dem;
+    }
+    let dem = checkNumber(array, number);
+    console.log(dem);
+    if (dem != 0) {
+        alert('number nằm trong mảng');
+
+    } else {
+        alert('number không nằm trong mảng');
+    }
+
+</script>
+
+</html>

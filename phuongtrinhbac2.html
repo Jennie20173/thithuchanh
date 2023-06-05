@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function giaiPhuongTrinh(a, b, c) {
+        console.log(a,b,c)
+        let delta = Math.pow(b, 2) - (4 * a * c);
+        console.log(delta) ;
+        if (delta < 0) {
+            console.log('phương trình vô nghiệm');
+        }
+        if (delta == 0) {
+            const x1 = -b / (2 * a);
+            const x2 = -b / (2 * a);
+            consolog.log(x1,x2 );
+        }
+        if (delta > 0) {
+            const x1 = (-b - Math.sqrt(delta)) / (2 * a);
+            const x2 = (-b + Math.sqrt(delta)) / (2 * a);
+            console.log(x1 + 'và'+ x2);
+        } 
+    } 
+    giaiPhuongTrinh(8, 12, -20);
+     
+    
+</script>
+
+</html>
